@@ -3,36 +3,63 @@
   padding: 0;
 }
 body {
-  background-color: rgb(231, 231, 241);
+  background-color: rgb(255, 255, 253);
 }
 .container {
   width: 70%;
   margin: auto;
   background-color: #fff;
-  box-shadow: 0 30px 30px 0 rgba(100, 100, 100, 0.6);
+  box-shadow: 0 30px 30px 0 rgba(106, 105, 105, 0.6);
 }
+.main{
+  height: 30vh;
+  border-bottom: 1px solid rgb(238, 236, 236);
+}
+
 div .background-img {
-  height: 28vh;
-  width: 70%;
+  height: 30vh;
+  width: 100%;
   opacity: 0.1;
   position: absolute;
+  z-index: -1;
+}
+.logo-div {
+  display: flex;
+  justify-content: center;
 }
 .logo {
   width: 30vh;
+  margin-top: 10px;
   position: relative;
-  margin: 10px 480px;
+  padding: 8px 0 15px;
 }
 .btn img {
   width: 20px;
+  margin-bottom: 3px;
+}
+btn span {
+  color: #1683d6;
 }
 .btn button {
-  padding: 8px 26px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 18px;
   border-radius: 25px;
   font: 0.8em sans-serif;
-  font-weight: 500;
-  color: #1683d6;
+  font-weight: lighter;
+  background-color: aliceblue;
   border: 1px solid #1683d6;
   cursor: pointer;
+}
+.btn a {
+  text-decoration: none;
+  color: #1683d6;
+}
+.btn button:hover {
+  transform: scale(0.9);
+background-color: #ffffff;
+  
 }
 
 .link-text {
@@ -41,19 +68,30 @@ div .background-img {
   align-items: center;
   margin: 0 80px;
 }
+
+.links a img {
+  border-radius: 50%;
+}
 .links ul {
   display: flex;
-  gap: 10px;
+  gap: 5px;
   list-style: none;
 }
 .links ul li a {
   text-decoration: none;
   cursor: pointer;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+.links ul li a:hover {
+  transform: scale(0.9);
+}
+.links ul li a img {
+  width: 40px;
+  display: block;
 }
 
-div img {
-  width: 40px;
-}
 .text h2 {
   font: 1.7em arial;
   font-weight: 600;
@@ -70,21 +108,46 @@ div .education {
 }
 .navigation-btn {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 18px;
   margin-left: 70px;
+  padding-bottom: 18px;
 }
 button {
   padding: 8px 14px;
   border: 1px solid rgb(232, 232, 232);
-  background-color: aliceblue;
+  background-color: snow;
+}
+.navigation-btn button a{
+  border-radius: 5px;
   color: #1683d6;
-  cursor: pointer;
+  font-weight: 500;
+}
+.navigation-btn a{
+  text-decoration: none;
+  color: #1683d6;
+  letter-spacing: 1px;
 }
 
-.navigation-btn .reg {
+.navigation-btn .reg:hover{
   color: #33b81c;
-  font-weight: 600;
+  font-weight: bold;
+  transform: scale(0.8);
 }
+.navigation-btn .reg:active{
+  color: #33b81c;
+  font-weight: bold;
+}
+
+.navigation-btn .down:hover {
+  border-radius: 5px;
+  transform: scale(0.8);
+  font-weight: bold;
+  color: #33b81c;
+}
+.navigation-btn .down:active{
+  color: #33b81c;
+}
+
 .form {
   display: flex;
   justify-content: space-around;
@@ -131,10 +194,10 @@ textarea {
   width: 90%;
   margin: auto;
   margin-bottom: 10px;
+  /* background-color: rgb(238, 34, 105); */
 }
 .bottom-section {
   width: 100%;
-  /* background-color: firebrick; */
 }
 
 #address {
@@ -154,38 +217,226 @@ textarea {
   border-color: #1683d6;
 }
 .picture {
-  width: 1500px;
-  /* background-color: seagreen; */
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+.upload-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  border: 1px dashed gray;
+  margin-top: 5px;
+  width: 20px;
+  padding: 40px;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
 .picture .left {
   width: 15%;
-  /* background-color: darkblue; */
-  margin-left: -50px;
+  /* background-color: chartreuse; */
 }
 .picture .right {
-  font: 0.8em arial;
-  margin-bottom: 40px;
-  margin-right: 50px;
-  /* background-color: gold; */
+  font: 0.9em arial;
+  margin-bottom: 25px;
+  width: 100%;
 }
 
-/* .bottom-section div {
-  background-color: darksalmon;
-} */
-
-li{
- font: 0.9em arial;
+li {
+  font: 0.9em arial;
+}
+#robot{
+  width: 20vw;
 }
 #submit {
   width: 100%;
   height: 40px;
-  margin-top: 20px;
+  padding: 5px;
+  margin-top: 5px;
   text-align: center;
   background-color: #1683d6;
   color: #fff;
   font-weight: 500;
   border: none;
   border-radius: 5px;
+}
+#submit:active {
+  transform: scale(0.9);
+  background-color: #33b81c;
+}
+
+/* Ensure links are on top and clickable */
+.links a {
+  z-index: 10;
+  position: relative;
+}
+
+/* Ensure no overlay from other elements */
+.main,
+.head,
+.link-text {
+  position: relative;
+  z-index: 5;
+}
+
+/* -----student portal----- */
+.container-student-portal {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 100vh;
+  background-color: rgb(250, 250, 249);
+  box-shadow: 2px 2px 50px 0 rgba(148, 148, 148, 0.2);
+}
+.logo-container {
+  width: 90%;
+  align-items: center;
+  margin: 0 auto;
+}
+.logo-container img {
+  width: 20vh;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 430px;
+}
+
+#student-portal {
+  font: 16px arial;
+  font-weight: 600;
+  text-decoration: n;
+  text-align: center;
+  color: #4f4f4f;
+}
+.login {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  gap: 5px;
+  padding-top: 20px;
+  padding-left: 50px;
+  justify-content: center;
+}
+
+#login-btn {
+  width: 245px;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: 0;
+  background-color: rgb(224, 224, 223);
+  font: 0.9em sans-serif;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#login-btn:hover {
+  transform: scale(0.8);
+  border: 1px solid #999a9a;
+}
+
+#create-password {
+  width: 245px;
+  padding: 14px 20px;
+  border-radius: 5px;
+  border: 0;
+  background-color: rgb(248, 233, 233);
+  font: 0.7em sans-serif;
+  cursor: pointer;
+}
+#create-password:hover {
+  transform: scale(0.8);
+  border: 1px solid #999a9a;
+}
+#cinic-num {
+  width: 500px;
+  padding: 12px 5px;
+  margin-top: 25px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font: 0.7sans-serif;
+}
+#cinic-num:hover {
+  border-color: rgb(22, 98, 250);
+}
+#password {
+  width: 500px;
+  padding: 12px 5px;
+  margin-top: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font: 0.7sans-serif;
+}
+#password:hover {
+  border-color: rgb(22, 98, 250);
+}
+#text-cinic {
+  font: 0.8em sans-serif;
+  color: #575757;
+  margin-top: -5px;
+}
+#login {
+  margin-top: 10px;
+  width: 510px;
+  padding: 12px 10px;
+  border-radius: 5px;
+  color: #fff;
+  font: 0.7em sans-serif;
+  border: 0;
+  background-color: rgb(4, 76, 171);
+  cursor: pointer;
+}
+#login:active {
+  transform: scale(0.9);
+  background-color: #33b81c;
+}
+/* ==========Download id card css========= */
+.dowmload_id_card{
+  height: 540px;
+  display: flex;
+  justify-content: center;
+}
+.download_id_card_submit{
+ padding: 15px 70px;
+ margin-left: 70px;
+}
+#submission_form{
+  width: 70vh;
+}
+#submission_form:hover{
+  border-color: #33b81c;
+}
+
+#submission_form_submit{
+  width: 73vh;
+  padding: 12px 50px;
+  margin-top: 0;
+  background-color: #468bc1;
+  border: none;
+  color: #fff;
+  text-align: center;
+}
+/* =========Result Css======= */
+.results{
+  height: 540px;
+  display: flex;
+  justify-content: center;
+}
+.result{
+  padding: 15px 70px;
+  margin-left: 70px;
+ }
+ #roll_num{
+  width: 70vh;
+ }
+ #roll_num:hover{
+  border-color: #33b81c;
 }

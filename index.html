@@ -11,38 +11,41 @@
 <body>
     <div class="container">
         <div class="main">
-            <div class="head">
+            <div class="head" >
                 <div>
                     <img src="bg.png" alt="" class="background-img" />
                 </div>
-                <div>
+                <div class="logo-div">
                     <img src="logo.png" alt="" class="logo" />
                 </div>
                 <div class="link-text">
                     <div class="links">
                         <ul>
                             <li>
-                                <a href="https://www.facebook.com/" target="_blank">
-                                    <img src="./facebook.png" alt="facebook">
+                                <a href="https://www.facebook.com/saylani.smit/" target="_blank">
+                                    <img src="./facebook.webp"
+                                        alt="facebook">
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqa1FvS2I5WUF0VEtiTkUwa3JnUDBlRGxpVlBtQXxBQ3Jtc0tuOXNnM01xc0ZrRzBabU1uTzc3OHZzQ19yLXd3OTRkUWdYVlNfUndtV3RGOW9RNEZzVG5aejNBUkdnRUN3Rk4tVUluWUxPVDZDNE1UQmM0eG85V3BGQVpJNFNTc2Z2Y29XSmIxRGdEbmUzMnh2Nm13MA&q=https%3A%2F%2Fwww.instagram.com%2Fsaylanimassittraining%2F"
-                                    target="_blank"><img src="./insta.jpeg" alt="instagram"></a>
+                                <a href="https://www.instagram.com/saylani.smit/?hl=en"
+                                    target="_blank"><img src="./insta.png" alt="instagram" "></a>
                             </li>
                             <li>
-                                <a href="http://www.youtube.com/@SaylaniMassITTraining" target="_blank"><img
-                                        src="./youtubepng.png" title="utube" alt="youtube"></a>
+                                <a href=" http://www.youtube.com/@SaylaniMassITTraining" target="_blank"><img
+                                        src="./youtube.png" alt="youtube""></a>
                             </li>
                         </ul>
                     </div>
-                    <div class="text">
-                        <h2>Registration Form - SMIT</h2>
+                    <div class=" text">
+                                    <h2>Registration Form - SMIT</h2>
 
                     </div>
                     <div class="btn">
                         <button>
-                            <img src="student portal.png" alt="">Student portal
+                            <img src="student portal.png" alt="">
+                
+                            <a href="./studentportal.html" target="_blank">Student portal</a>
                         </button>
                     </div>
 
@@ -52,9 +55,15 @@
                     <span>Service-Education-Registration</span>
                 </div>
                 <div class="navigation-btn">
-                    <button class="reg"><a href=""></a>Registration</button>
-                    <button> <a href=""></a>Download ID Card</button>
-                    <button> <a href=""></a>Results</button>
+                    <button class="registration">
+                        <a href="./"  class="reg">Registration</a>
+                    </button>
+                    <button>
+                        <a href="./downloadidcard.html" class="down">Download ID Card</a>
+                    </button>
+                    <button>
+                        <a href="./result.html" class="down">Results</a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -147,27 +156,37 @@
                     <option value="">Do you have a laptop?</option>
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
-                </select> <br>
-                <div class="picture">
-                    <div class="left">
-                        <label for="">Picture</label> <br>
-                        <input type="file" name="" id="img-uplod" placeholder=" + Upload">
-                    </div>
-                    <div class="right">
-                        <p>With white or blue background</p>
-                        <p>File size must be less than 1MB</p>
-                        <p>File type: jpg, jpeg, png</p>
-                        <p>Upload your recent passport size picture</p>
-                        <p>Your Face should be clearly visible without any Glasses</p>
-                    </div>
+                </select>
+            </div>
 
-                </div list>
+            <div class="picture">
+                <div class="left">
+                    <label for="">Picture</label> <br>
+                    <span class="buttonfile">
+                        <input type="file" name="" id="img-uplod" accept="image/png, image/jpg, image/jpeg">
+                        <label for="" class="upload-box ">
+                            +upload
+                        </label>
+                        <span>
+                </div>
+                <div class="right">
+                    <p>With white or blue background</p>
+                    <p>File size must be less than 1MB</p>
+                    <p>File type: jpg, jpeg, png</p>
+                    <p>Upload your recent passport size picture</p>
+                    <p>Your Face should be clearly visible without any Glasses</p>
+                </div>
+
+
+            </div>
+            <div class="list">
                 <ol>
                     <li>I hereby, solemnly declare that the data and facts mentioned herein are true and correct to the
                         best of my knowledge. Further, I will abide by all the established and future regulations and
                         policies of SWIT</li>
                     <li>
-                        I hereby accept the responsibilities of good conduct and guarantee that I will not be involved in any other activity, political or ethical, but learning during my stay in the program.
+                        I hereby accept the responsibilities of good conduct and guarantee that I will not be involved
+                        in any other activity, political or ethical, but learning during my stay in the program.
                     </li>
                     <li>
                         Defiance will render my admission canceled at any point in time.
@@ -179,17 +198,13 @@
                         It's mandatory for female students to wear abaya/hijab in the class
                     </li>
                 </ol>
+                <img src="./resize (1).webp" alt="" id="robot">
 
                 <input type="submit" value="SUBMIT" id="submit">
             </div>
-
-
-
-
         </div>
+    </div>
 
-    </div>
-    </div>
 </body>
 
 </html>
