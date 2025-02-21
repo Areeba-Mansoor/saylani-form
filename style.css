@@ -2,18 +2,22 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   background-color: rgb(255, 255, 253);
 }
+
 .container {
-  width: 70%;
+  width: 90%;
   margin: auto;
   background-color: #fff;
-  box-shadow: 0 30px 30px 0 rgba(106, 105, 105, 0.6);
 }
-.main{
+
+.main {
   height: 30vh;
-  border-bottom: 1px solid rgb(238, 236, 236);
+  padding: 0 60px;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgb(214, 213, 213);
 }
 
 div .background-img {
@@ -23,45 +27,53 @@ div .background-img {
   position: absolute;
   z-index: -1;
 }
+
 .logo-div {
   display: flex;
   justify-content: center;
 }
+
 .logo {
   width: 30vh;
   margin-top: 10px;
   position: relative;
   padding: 8px 0 15px;
 }
+
+/* -----button student portal----- */
 .btn img {
   width: 20px;
   margin-bottom: 3px;
 }
+
 btn span {
   color: #1683d6;
 }
+
 .btn button {
   display: flex;
   align-items: center;
   gap: 5px;
   padding: 7px 18px;
   border-radius: 25px;
-  font: 0.8em sans-serif;
-  font-weight: lighter;
-  background-color: aliceblue;
+  font: 0.9em sans-serif;
+  font-weight: 600;
+  background-color: rgb(235, 237, 239);
   border: 1px solid #1683d6;
   cursor: pointer;
 }
+
 .btn a {
   text-decoration: none;
   color: #1683d6;
 }
+
 .btn button:hover {
   transform: scale(0.9);
-background-color: #ffffff;
-  
+  background-color: #ffffff;
 }
-
+ 
+/* -----social links----- */
 .link-text {
   display: flex;
   justify-content: space-between;
@@ -72,11 +84,13 @@ background-color: #ffffff;
 .links a img {
   border-radius: 50%;
 }
+
 .links ul {
   display: flex;
   gap: 5px;
   list-style: none;
 }
+
 .links ul li a {
   text-decoration: none;
   cursor: pointer;
@@ -84,14 +98,18 @@ background-color: #ffffff;
   position: relative;
   z-index: 1;
 }
+
 .links ul li a:hover {
-  transform: scale(0.9);
+  transform: scale(0.8);
+  transition: transform .3s ease-in;
 }
+
 .links ul li a img {
   width: 40px;
   display: block;
 }
 
+/* ----heading registration form----- */
 .text h2 {
   font: 1.7em arial;
   font-weight: 600;
@@ -106,74 +124,101 @@ div .education {
   margin-left: 40px;
   color: rgb(80, 79, 79);
 }
+
+/* ----navigation button---- */
 .navigation-btn {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
   text-align: center;
-  margin-top: 18px;
-  margin-left: 70px;
-  padding-bottom: 18px;
+  margin-top: 10px;
+  margin-left: 7px;
+  margin-bottom: 0;
+  padding: 10px;
+  padding-left: 40px;
+  /* background-color: #468bc1; */
 }
+
 button {
-  padding: 8px 14px;
-  border: 1px solid rgb(232, 232, 232);
-  background-color: snow;
+  padding: 10px 14px;
+  border-radius: 2px;
+  border: none;
+  background-color: rgb(240, 239, 239);
 }
-.navigation-btn button a{
-  border-radius: 5px;
-  color: #1683d6;
-  font-weight: 500;
-}
-.navigation-btn a{
+
+.navigation-btn a {
   text-decoration: none;
-  color: #1683d6;
+  font-weight: 500;
   letter-spacing: 1px;
+  color: #1683d6;
 }
 
-.navigation-btn .reg:hover{
-  color: #33b81c;
-  font-weight: bold;
-  transform: scale(0.8);
+#registration_btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
-.navigation-btn .reg:active{
+
+#registration_btn a:hover {
+  color: rgb(34, 66, 246);
+  font-weight: bold;
+}
+
+#registration_btn a:visited{
   color: #33b81c;
   font-weight: bold;
 }
 
-.navigation-btn .down:hover {
-  border-radius: 5px;
-  transform: scale(0.8);
-  font-weight: bold;
-  color: #33b81c;
-}
-.navigation-btn .down:active{
-  color: #33b81c;
+#download_btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
 
+#download_btn a:hover {
+  font-weight: bold;
+  color: rgb(34, 66, 246);
+}
+
+#result_btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+#result_btn a:hover {
+  font-weight: bold;
+  color: rgb(34, 66, 246);
+}
+
+/* ---form--- */
 .form {
   display: flex;
   justify-content: space-around;
-  margin: 40px 60px;
+  margin: 30px 60px;
   margin-bottom: 0;
 }
+
 label {
   font: 0.9em sans-serif;
   color: #1683d6;
 }
+
 select {
-  width: 480px;
+  width: 600px;
   padding: 18px 10px;
   border-radius: 5px;
   color: gray;
   font: 0.8em sans-serif;
-  font-weight: 500;
+  font-weight: bold;
   margin-top: 8px;
   margin-bottom: 20px;
   border: 1px solid rgb(132, 199, 31);
 }
+
 select:hover {
   border-color: #1683d6;
 }
+
 input {
-  width: 460px;
+  width: 580px;
   padding: 18px 10px;
   border-radius: 5px;
   color: gray;
@@ -183,44 +228,39 @@ input {
   margin-bottom: 20px;
   border: 1px solid rgb(132, 199, 31);
 }
+
 input:hover {
   border-color: #1683d6;
 }
-textarea {
-  width: 400px;
-}
 
 .bottom-section div {
-  width: 90%;
-  margin: auto;
+  width: 85%;
+  margin-left: 85px;
+  padding-right: 20px;
   margin-bottom: 10px;
-  /* background-color: rgb(238, 34, 105); */
 }
+
 .bottom-section {
   width: 100%;
 }
 
 #address {
-  width: 970px;
+  width: 1230px;
 }
+
 #laptop,
 #LastQua {
-  width: 100%;
+  width: 1250px;
 }
-#img-uplod {
-  width: 80px;
-  height: 50px;
-  border: 1px dashed gray;
-  background-color: #fafafa;
-}
-#img-uplod:hover {
-  border-color: #1683d6;
-}
+
+/* -----picture--- */
 .picture {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  margin-top: -20px;
 }
+
 .upload-box {
   display: flex;
   justify-content: center;
@@ -233,7 +273,6 @@ textarea {
   background-color: whitesmoke;
   color: black;
   border-radius: 10px;
-  margin-right: 20px;
 }
 
 input[type="file"] {
@@ -241,21 +280,31 @@ input[type="file"] {
 }
 
 .picture .left {
-  width: 15%;
-  /* background-color: chartreuse; */
-}
-.picture .right {
-  font: 0.9em arial;
-  margin-bottom: 25px;
-  width: 100%;
+  width: 10%;
+  margin-left: 0;
+  padding-bottom: 10px;
 }
 
-li {
-  font: 0.9em arial;
+.picture .right {
+  font: 0.9em sans-serif;
+  margin-top: 25px;
+  width: 100%;
+  margin-left: 0;
 }
-#robot{
+
+/* -----list bottom section----- */
+.list li {
+  font: 1em sans-serif;
+  margin-left: 18px;
+  /* background-color: #d13030; */
+  /* list-style-position: inside; */
+}
+
+#robot {
   width: 20vw;
 }
+
+/* ----submit button---- */
 #submit {
   width: 100%;
   height: 40px;
@@ -268,9 +317,14 @@ li {
   border: none;
   border-radius: 5px;
 }
+
 #submit:active {
-  transform: scale(0.9);
   background-color: #33b81c;
+}
+
+#submit:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
 }
 
 /* Ensure links are on top and clickable */
@@ -288,20 +342,21 @@ li {
 }
 
 /* -----student portal----- */
-.container-student-portal {
+.container-student-portal , .create-password{
   width: 70%;
   display: flex;
   flex-direction: column;
   margin: auto;
   height: 100vh;
   background-color: rgb(250, 250, 249);
-  box-shadow: 2px 2px 50px 0 rgba(148, 148, 148, 0.2);
 }
+
 .logo-container {
   width: 90%;
   align-items: center;
   margin: 0 auto;
 }
+
 .logo-container img {
   width: 20vh;
   align-items: center;
@@ -316,6 +371,7 @@ li {
   text-align: center;
   color: #4f4f4f;
 }
+
 .login {
   width: 90%;
   display: flex;
@@ -332,15 +388,14 @@ li {
   padding: 12px 20px;
   border-radius: 5px;
   border: 0;
-  background-color: rgb(224, 224, 223);
+  background-color: #e3ebf7;
   font: 0.9em sans-serif;
   margin-right: 10px;
   cursor: pointer;
 }
 
 #login-btn:hover {
-  transform: scale(0.8);
-  border: 1px solid #999a9a;
+  transform: scale(0.9);
 }
 
 #create-password {
@@ -348,14 +403,19 @@ li {
   padding: 14px 20px;
   border-radius: 5px;
   border: 0;
-  background-color: rgb(248, 233, 233);
+  background-color: #f6ecec;
   font: 0.7em sans-serif;
   cursor: pointer;
 }
-#create-password:hover {
-  transform: scale(0.8);
-  border: 1px solid #999a9a;
+
+#create-password a {
+  text-decoration: none;
 }
+
+#create-password:hover {
+  transform: scale(0.9);
+}
+
 #cinic-num {
   width: 500px;
   padding: 12px 5px;
@@ -364,9 +424,12 @@ li {
   border-radius: 5px;
   font: 0.7sans-serif;
 }
+
 #cinic-num:hover {
-  border-color: rgb(22, 98, 250);
+  border:2px solid rgb(22, 98, 250);
+
 }
+
 #password {
   width: 500px;
   padding: 12px 5px;
@@ -375,14 +438,17 @@ li {
   border-radius: 5px;
   font: 0.7sans-serif;
 }
+
 #password:hover {
-  border-color: rgb(22, 98, 250);
+  border:2px solid rgb(22, 98, 250);
 }
-#text-cinic {
+
+#text-cinic, #text-dob {
   font: 0.8em sans-serif;
   color: #575757;
   margin-top: -5px;
 }
+
 #login {
   margin-top: 10px;
   width: 510px;
@@ -394,28 +460,34 @@ li {
   background-color: rgb(4, 76, 171);
   cursor: pointer;
 }
-#login:active {
-  transform: scale(0.9);
+
+#login:hover{
+  transform: scale(1.03);
+  transition: transform .3s ease;
   background-color: #33b81c;
 }
-/* ==========Download id card css========= */
-.dowmload_id_card{
+
+/* ------Download id----- */
+.dowmload_id_card {
   height: 540px;
   display: flex;
   justify-content: center;
 }
-.download_id_card_submit{
- padding: 15px 70px;
- margin-left: 70px;
+
+.download_id_card_submit {
+  padding: 15px 70px;
+  margin-left: 70px;
 }
-#submission_form{
+
+#submission_form {
   width: 70vh;
 }
-#submission_form:hover{
+
+#submission_form:hover {
   border-color: #33b81c;
 }
 
-#submission_form_submit{
+#submission_form_submit {
   width: 73vh;
   padding: 12px 50px;
   margin-top: 0;
@@ -424,19 +496,37 @@ li {
   color: #fff;
   text-align: center;
 }
-/* =========Result Css======= */
-.results{
+
+/* -------Result------ */
+.results {
   height: 540px;
   display: flex;
   justify-content: center;
 }
-.result{
+
+.result {
   padding: 15px 70px;
   margin-left: 70px;
- }
- #roll_num{
+}
+
+#roll_num {
   width: 70vh;
- }
- #roll_num:hover{
+}
+
+#roll_num:hover {
   border-color: #33b81c;
+}
+
+/* -------Create a password---- */
+#dob {
+  width: 500px;
+  padding: 12px 5px;
+  margin-top: 25px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font: 0.8sans-serif;
+}
+
+#dob:hover {
+  border:2px solid rgb(22, 98, 250);
 }

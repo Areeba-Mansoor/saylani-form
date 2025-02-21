@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Saylani Form</title>
+    <title>Saylani Welfare In Trust</title>
+    <link rel="shortcut icon" href="saylani_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <div class="container">
         <div class="main">
-            <div class="head" >
+            <div class="head">
                 <div>
                     <img src="bg.png" alt="" class="background-img" />
                 </div>
@@ -23,13 +24,12 @@
                         <ul>
                             <li>
                                 <a href="https://www.facebook.com/saylani.smit/" target="_blank">
-                                    <img src="./facebook.webp"
-                                        alt="facebook">
+                                    <img src="./facebook.webp" alt="facebook">
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/saylani.smit/?hl=en"
-                                    target="_blank"><img src="./insta.png" alt="instagram" "></a>
+                                <a href="https://www.instagram.com/saylani.smit/?hl=en" target="_blank"><img
+                                        src="./insta.png" alt="instagram" "></a>
                             </li>
                             <li>
                                 <a href=" http://www.youtube.com/@SaylaniMassITTraining" target="_blank"><img
@@ -44,8 +44,10 @@
                     <div class="btn">
                         <button>
                             <img src="student portal.png" alt="">
-                
-                            <a href="./studentportal.html" target="_blank">Student portal</a>
+
+                            <a href="./studentportal.html" target="_blank">
+                                <span>Student portal</span>
+                            </a>
                         </button>
                     </div>
 
@@ -55,18 +57,19 @@
                     <span>Service-Education-Registration</span>
                 </div>
                 <div class="navigation-btn">
-                    <button class="registration">
-                        <a href="./"  class="reg">Registration</a>
+                    <button id="registration_btn">
+                        <a href="./" class="reg">Registration</a>
                     </button>
-                    <button>
+                    <button id="download_btn">
                         <a href="./downloadidcard.html" class="down">Download ID Card</a>
                     </button>
-                    <button>
-                        <a href="./result.html" class="down">Results</a>
+                    <button id="result_btn">
+                        <a href="./result.html" class="res">Result</a>
                     </button>
                 </div>
             </div>
         </div>
+
         <div class="form">
             <div id="left-side">
                 <label for="select country">Select Country</label> <br>
@@ -76,11 +79,19 @@
                     <option value="Turkey">Turkey</option>
                 </select> <br>
 
-                <label for="select course">Select course or event</label>
+                <label for="select course">Select course or event</label> <br>
                 <select name="" id="">
                     <option value="">Select course or event</option>
-                    <option value="Pakistan">Graphic Desigining</option>
-                    <option value="Turkey">Turkey</option>
+                    <option value="Graphic Desigining">Graphic Desigining</option>
+                    <option value="Cloud Data Engineering">Cloud Data Engineering</option>
+                    <option value="Flutter APP Aevelopmrnt">Flutter APP Aevelopmrnt</option>
+                    <option value="UI/UX Design">UI/UX Design</option>
+                    <option value="Ai & Data Science">Ai & Data Science</option>
+                    <option value="Generative A">Generative Ai</option>
+                    <option value="Modern Web & APP Development">Modern Web & APP Development</option>
+                    <option value="Amazon">Amazon</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="Shopify">Shopify</option>
                 </select> <br>
 
                 <label for="fullname">Full Name</label> <br>
@@ -93,7 +104,7 @@
                 <input type="number" name="" id="cinic" placeholder="CINIC"><br>
 
                 <label for="dob">Date of birth</label> <br>
-                <input type="date" name="" id="dob">
+                <input type="date" name="">
 
             </div>
             <div id="right-side">
@@ -182,7 +193,7 @@
             <div class="list">
                 <ol>
                     <li>I hereby, solemnly declare that the data and facts mentioned herein are true and correct to the
-                        best of my knowledge. Further, I will abide by all the established and future regulations and
+                        best of my knowledge. <br>  Further, I will abide by all the established and future regulations and
                         policies of SWIT</li>
                     <li>
                         I hereby accept the responsibilities of good conduct and guarantee that I will not be involved
